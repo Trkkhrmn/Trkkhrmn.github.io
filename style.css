@@ -532,8 +532,10 @@ a:hover {
 /* ===== Projects ===== */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 28px;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .project-card {
@@ -555,8 +557,8 @@ a:hover {
 
 .project-card:hover {
     border-color: var(--accent);
-    transform: translateY(-6px);
-    box-shadow: 0 12px 40px rgba(108, 99, 255, 0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(108, 99, 255, 0.12);
 }
 
 .project-card.featured {
@@ -567,8 +569,9 @@ a:hover {
 .project-image {
     position: relative;
     width: 100%;
-    height: 200px;
+    aspect-ratio: 16 / 10;
     overflow: hidden;
+    background: var(--bg-primary);
 }
 
 .project-image img {
@@ -585,8 +588,8 @@ a:hover {
 .project-image-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(10, 10, 15, 0.7);
-    backdrop-filter: blur(4px);
+    background: rgba(10, 10, 15, 0.65);
+    backdrop-filter: blur(3px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -609,18 +612,18 @@ a:hover {
     background: var(--accent);
     color: #fff;
     border: none;
+    cursor: pointer;
     transition: all var(--transition);
 }
 
 .btn-sm:hover {
     background: var(--accent-light);
     color: #fff;
-    transform: scale(1.05);
 }
 
 /* Project Body */
 .project-body {
-    padding: 24px;
+    padding: 20px 24px 24px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -630,18 +633,18 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .project-label {
     font-family: var(--font-mono);
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--accent);
     background: var(--accent-glow);
-    padding: 4px 10px;
+    padding: 3px 10px;
     border-radius: 100px;
 }
 
@@ -652,7 +655,7 @@ a:hover {
 
 .project-links a {
     color: var(--text-muted);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     transition: color var(--transition);
 }
 
@@ -661,39 +664,33 @@ a:hover {
 }
 
 .project-title {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 600;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     line-height: 1.4;
 }
 
 .project-desc {
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     line-height: 1.7;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     flex-grow: 1;
 }
 
 .project-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 6px;
 }
 
 .project-tags span {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     color: var(--accent);
     background: var(--accent-glow);
-    padding: 4px 12px;
+    padding: 3px 10px;
     border-radius: 100px;
-    transition: all var(--transition);
-}
-
-.project-tags span:hover {
-    background: var(--accent);
-    color: #fff;
 }
 
 /* ===== Publication ===== */
@@ -940,10 +937,8 @@ a:hover {
 
     .projects-grid {
         grid-template-columns: 1fr;
-    }
-
-    .project-image {
-        height: 180px;
+        max-width: 500px;
+        margin: 0 auto;
     }
 
     .skills-grid {
