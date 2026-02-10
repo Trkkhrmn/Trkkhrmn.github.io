@@ -169,65 +169,92 @@
             <div class="projects-grid">
 
                 <div class="project-card featured">
-                    <div class="project-top">
-                        <div class="project-icon"><i class="fas fa-helicopter"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/Trkkhrmn/multi-uav-reconnaissance" target="_blank" title="Source Code"><i class="fab fa-github"></i></a>
+                    <div class="project-image">
+                        <img src="images/multi-uav-gazebo.png" alt="Multi-UAV Gazebo Simulation Environment" loading="lazy">
+                        <div class="project-image-overlay">
+                            <a href="https://github.com/Trkkhrmn/multi-uav-reconnaissance" target="_blank" class="btn btn-sm">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
                         </div>
                     </div>
-                    <h3 class="project-title">Multi-UAV Reconnaissance & Task Allocation System</h3>
-                    <p class="project-desc">
-                        Built a 10-drone (4 scout + 6 worker) autonomous reconnaissance pipeline in ROS 2, PX4 SITL, 
-                        and Gazebo. Features OpenCV-based target detection, pinhole-model geo-localization, 
-                        distance-based sensor fusion, and a greedy nearest-first MRTA strategy for payload delivery.
-                    </p>
-                    <div class="project-tags">
-                        <span>ROS 2</span>
-                        <span>PX4</span>
-                        <span>Gazebo</span>
-                        <span>Python</span>
-                        <span>OpenCV</span>
+                    <div class="project-body">
+                        <div class="project-header">
+                            <span class="project-label">Featured</span>
+                            <div class="project-links">
+                                <a href="https://github.com/Trkkhrmn/multi-uav-reconnaissance" target="_blank" title="Source Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Multi-UAV Reconnaissance & Task Allocation System</h3>
+                        <p class="project-desc">
+                            Built a 10-drone (4 scout + 6 worker) autonomous reconnaissance pipeline in ROS 2, PX4 SITL, 
+                            and Gazebo. Features OpenCV-based target detection, pinhole-model geo-localization, 
+                            distance-based sensor fusion, and a greedy nearest-first MRTA strategy for payload delivery.
+                        </p>
+                        <div class="project-tags">
+                            <span>ROS 2</span>
+                            <span>PX4</span>
+                            <span>Gazebo</span>
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card featured">
-                    <div class="project-top">
-                        <div class="project-icon"><i class="fas fa-robot"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/Trkkhrmn" target="_blank" title="Source Code"><i class="fab fa-github"></i></a>
+                    <div class="project-image">
+                        <img src="images/mrta-simulation.png" alt="MRTA Simulation Framework" loading="lazy">
+                        <div class="project-image-overlay">
+                            <a href="https://github.com/Trkkhrmn" target="_blank" class="btn btn-sm">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
                         </div>
                     </div>
-                    <h3 class="project-title">Comparative Analysis of Supervised MRTA Strategies</h3>
-                    <p class="project-desc">
-                        Designed and implemented a modular simulation framework to benchmark centralized vs. 
-                        decentralized MRTA strategies, performing a comprehensive empirical analysis of Greedy, 
-                        Hungarian, and Market-Based algorithms under different supervisory controls.
-                    </p>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>PyGame</span>
-                        <span>NumPy</span>
-                        <span>MRTA</span>
+                    <div class="project-body">
+                        <div class="project-header">
+                            <span class="project-label">Featured</span>
+                            <div class="project-links">
+                                <a href="https://github.com/Trkkhrmn" target="_blank" title="Source Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Comparative Analysis of Supervised MRTA Strategies</h3>
+                        <p class="project-desc">
+                            Designed and implemented a modular simulation framework to benchmark centralized vs. 
+                            decentralized MRTA strategies, performing a comprehensive empirical analysis of Greedy, 
+                            Hungarian, and Market-Based algorithms under different supervisory controls.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>PyGame</span>
+                            <span>NumPy</span>
+                            <span>MRTA</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-top">
-                        <div class="project-icon"><i class="fas fa-plane"></i></div>
-                        <div class="project-links"></div>
+                    <div class="project-image">
+                        <img src="images/flight-controller-trajectory.png" alt="3D Trajectory Tracking Results" loading="lazy">
+                        <div class="project-image-overlay">
+                            <span class="btn btn-sm"><i class="fas fa-info-circle"></i> Capstone Project</span>
+                        </div>
                     </div>
-                    <h3 class="project-title">Flight Controller Design for Quadcopter UAVs</h3>
-                    <p class="project-desc">
-                        Led a capstone team to design and benchmark PID (with Active Disturbance Rejection), 
-                        LQR (with Luenberger State Observer), and Robust Backstepping controllers for a 6-DOF 
-                        quadcopter, achieving stable flight under nonlinear dynamics and external disturbances.
-                    </p>
-                    <div class="project-tags">
-                        <span>MATLAB</span>
-                        <span>Simulink</span>
-                        <span>Control Theory</span>
-                        <span>LQR</span>
-                        <span>PID</span>
+                    <div class="project-body">
+                        <div class="project-header">
+                            <span class="project-label label-alt">Capstone</span>
+                        </div>
+                        <h3 class="project-title">Flight Controller Design for Quadcopter UAVs</h3>
+                        <p class="project-desc">
+                            Led a capstone team to design and benchmark PID (with Active Disturbance Rejection), 
+                            LQR (with Luenberger State Observer), and Robust Backstepping controllers for a 6-DOF 
+                            quadcopter, achieving stable flight under nonlinear dynamics and external disturbances.
+                        </p>
+                        <div class="project-tags">
+                            <span>MATLAB</span>
+                            <span>Simulink</span>
+                            <span>Control Theory</span>
+                            <span>LQR</span>
+                            <span>PID</span>
+                        </div>
                     </div>
                 </div>
 
